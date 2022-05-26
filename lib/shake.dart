@@ -3,7 +3,7 @@ library shake;
 import 'dart:async';
 import 'dart:math';
 
-import 'package:sensors_plus/sensors_plus.dart';
+import 'package:acc_sensor/acc_sensor.dart';
 
 /// Callback for phone shakes
 typedef void PhoneShakeCallback();
@@ -53,7 +53,7 @@ class ShakeDetector {
 
   /// Starts listening to accelerometer events
   void startListening() {
-    streamSubscription = accelerometerEvents.listen(
+    streamSubscription = AccSensor().accelerometerEvents.listen(
       (AccelerometerEvent event) {
         double x = event.x;
         double y = event.y;
