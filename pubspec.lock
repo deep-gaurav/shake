@@ -6,7 +6,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "4e329494ba702d1138eeb2a69cb36c1c40f271b7"
+      resolved-ref: fbfd60e7a6eb295788d80eff651765726f4d5596
       url: "https://github.com/deep-gaurav/accel_sensor"
     source: git
     version: "0.0.1"
